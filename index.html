@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,60 +7,106 @@
     <title>Torres</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/carousel.js"></script>
 </head>
 <body>
-    <div class="navbar-fixed">
-        <nav>
-            <div class="container">
+    <nav class="torres-color-background-opacity" style="position: fixed; z-index:0; height: 100px">
+        <div class="container">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Nav</a>
+                <a href="index.html" class="brand-logo center">
+                    <img class="hide-on-small-only" style="height:65px" src="images/Logotipo_Los_Pescadores.png" alt="">
+                    <img class="hide-on-med-and-up" style="height:55px" src="images/Logotipo_Los_Pescadores.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/lospescadores_/" class="right" target="_blank">
+                    <img class="hide-on-small-only" style="height:40px; margin-top: 12px; padding-left: 10px;" src="images/insta.png" alt="">
+                    <img class="hide-on-med-and-up" style="height:30px; margin-top: 15px; padding-left: 10px;" src="images/insta.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/LosPescadoresRestaurante" class="right" target="_blank">
+                    <img class="hide-on-small-only" style="height:36px; margin-top: 20px;" src="images/facebook.png" alt="">
+                    <img class="hide-on-med-and-up" style="height:26px; margin-top: 17px;" src="images/facebook.png" alt="">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large-and-down"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down hide-on-large-only show-on-extra-large">
+                    <li><a href="#nosotros">Inicio</a></li>
+                    <li><a href="#galeria">Departamentos</a></li>
+                </ul>
+                <ul class="right hide-on-med-and-down hide-on-large-only show-on-extra-large">
+                    <li><a href="#sucursales">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
             </div>
-            </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#galeria">GALERÍA DE FOTOS</a></li>
+        <li><a href="#sucursales">SUCURSALES</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
     <div class="slider" style="position:fixed; z-index:-1">
         <ul class="slides">
-          <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
-            <img src="images/1-Torre-Cruz-del-Sur.png"> 
-            <div class="caption center-align" style="opacity: 0; transform: translateY(-100px);">
-              <div style="background-color: violet; height: 350px;opacity: 0.7;border-style: solid; border-width: 5px;">
-                <div style="height: 10px"></div>
-                <h3 style="color:white; opacity: 1">Hola</h3>
-                <h4 style="color:white; opacity: 1">Ut excepteur in commodo sunt reprehenderit proident elit sunt sint occaecat ex sint est. Ea non tempor Lorem voluptate irure. Sit culpa ea laboris sint.</h5>
-              </div>
-            </div>
-          </li>
-          <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
-            <img src="images/2-Torre-Cruz-del-Sur.png"> 
-            <div class="caption center-align" style="opacity: 0; transform: translateY(-100px);">
-                <div style="background-color: violet; height: 350px;opacity: 0.7;border-style: solid; border-width: 5px;">
-                    <div style="height: 10px"></div>
-                    <h3 style="color:white; opacity: 1">Hola</h3>
-                    <h4 style="color:white; opacity: 1">Ut excepteur in commodo sunt reprehenderit proident elit sunt sint occaecat ex sint est. Ea non tempor Lorem voluptate irure. Sit culpa ea laboris sint.</h5>
+            <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
+                <img src="images/2-Torre-Cruz-del-Sur.png"> 
+                <div class="caption center-align" style="opacity: 0; transform: translateY(-100px); margin-top: 100px;">
+                    <div style="height: 350px; border-style: solid; border-width: 2px;">
+                        <div class="center-align" style="background-color: #04537b; opacity: 0.9; height:330px;margin: 8px  auto;max-width:1280px;width:98%;">
+                            <div style="height: 5px"></div>
+                            <h3 style="color:white; opacity: 1">VIVE CON EXCELENCIA</h3>
+                            <h3 style="color:white; opacity: 1">Departamentos en Puebla</h3>
+                            <br>
+                            <hr style="width:80%; color:white">
+                            <img src="images/estacionamiento-torre-cruz-del-sur.png" style="width:100px; height:100px" alt="">
+                        </div>
+                    </div>
                 </div>
-            </div>
-          </li>
+            </li>
+            <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
+                <img src="images/1-Torre-Cruz-del-Sur.png"> 
+                <div class="caption center-align" style="opacity: 0; transform: translateY(-100px); margin-top: 100px;">
+                    <div style="height: 350px; border-style: solid; border-width: 2px;">
+                        <div class="center-align" style="background-color: #04537b; opacity: 0.7; height:330px;margin: 8px  auto;max-width:1280px;width:98%;">
+                                <div style="height: 5px"></div>
+                                <h3 style="color:white; opacity: 1">EL HOGAR QUE SOÑASTE SIEMPRE</h3>
+                                <h3 style="color:white; opacity: 1">Departamentos en Puebla</h3>
+                                <br>
+                                <hr style="width:80%; color:white">
+                                <img src="images/estacionamiento-torre-cruz-del-sur.png" style="width:100px; height:100px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
     <div id="vacio"></div>
-    <div id="contenedor">
-        <div style="height:50px"></div>
-        <div class="container95">
-            <div class="row">
+    <section style="background-color:white">
+        <br>
+        <div class="row">
+            <br>
+            <div class="container95">
                 <div class="col m6">
+                    <h3 class="torres-color-texto"><span style="font-weight:bold">TORRE</span> <br> CRUZ DEL SUR</h3>
                     <br>
-                    <br>
-                    <p>Aliqua incididunt occaecat dolore esse nulla magna. Cupidatat adipisicing in irure voluptate veniam non consectetur laboris qui deserunt. Pariatur occaecat est aute enim.</p>
-                    <p>Laboris sit laborum cillum in deserunt non. Proident minim amet aliqua reprehenderit. Sit qui non enim culpa reprehenderit incididunt officia deserunt velit. Duis cillum consequat id ut irure fugiat nisi duis veniam ipsum consectetur.</p>
-                    <p>Aliqua incididunt occaecat dolore esse nulla magna. Cupidatat adipisicing in irure voluptate veniam non consectetur laboris qui deserunt. Pariatur occaecat est aute enim.</p>
-                    <p>Laboris sit laborum cillum in deserunt non. Proident minim amet aliqua reprehenderit. Sit qui non enim culpa reprehenderit incididunt officia deserunt velit. Duis cillum consequat id ut irure fugiat nisi duis veniam ipsum consectetur.</p>
+                    <h5 class="torres-color-texto">
+                        Es un conjunto de <span style="font-weight:bold">12 niveles</span> con modernos departamentos, que se distinguen por:
+                        <br>
+                        - Diseño vanguardista, que ofrece confort seguridad y tranquilidad. 
+                        <br>
+                        - Excelente ubicación: Boulevard Forjadores. 
+                        <br>
+                        - Posición estratégica para admirar los más bellos paisajes del altiplano central. 
+                    </h5>
                 </div>
                 <div class="col m6">
-                    <img src="images/1-Torre-Cruz-del-Sur.png" class="responsive-img" alt="">
+                    <img src="images/2-Torre-Cruz-del-Sur.png" class="responsive-img" alt="">
                 </div>
             </div>
         </div>
+        <br>
+        <br>
         <div class="slider" id="slider2">
             <ul class="slides">
                 <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
@@ -75,14 +121,76 @@
             </ul>
         </div>
         <br>
+        <br>
         <div class="container95">
-            <p>Velit duis deserunt non consequat deserunt do Lorem excepteur. Sit veniam esse officia ex Lorem magna eu dolore sunt. Anim esse pariatur dolore velit Lorem culpa esse ipsum et sint. Enim dolor laboris ullamco veniam tempor ea consequat eu laboris.</p>
-            <p>Velit duis deserunt non consequat deserunt do Lorem excepteur. Sit veniam esse officia ex Lorem magna eu dolore sunt. Anim esse pariatur dolore velit Lorem culpa esse ipsum et sint. Enim dolor laboris ullamco veniam tempor ea consequat eu laboris.</p>
-            <br>
+            <h3 class="torres-color-texto"><span style="font-weight:bold">TRES TIPOS</span> <br>DE DEPARTAMENTOS</h3>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <br>
+        <div style="background-image:url('images/city.png');background-repeat:no-repeat;background-size:cover; height:369px"></div>
+        <br>
+        <div style="background-image:url('images/panoramic.png');background-repeat:no-repeat;background-size:cover; height:369px"></div>
+        <br>
+        <div style="background-image:url('images/Sky.png');background-repeat:no-repeat;background-size:cover; height:369px"></div>
+        <br>
+        <div class="container95">
+            <h3 class="torres-color-texto"><span style="font-weight:bold">GALERÍA EL MEJOR LUGAR</span> <br>PARA VIVIR CON EXCELENCIA</h3>
+        </div>
+        <br>
+        <section id="demos">
+            <div>
+                <div class="container95">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" style="width:350px; height: 350px">
+                            <img src="images/1-Torre-Cruz-del-Sur.png" class="materialboxed" alt="">
+                        </div>
+                        <div class="item" style="width:350px; height: 350px">
+                            <img src="images/1-Torre-Cruz-del-Sur.png" class="materialboxed" alt="">
+                        </div>
+                        <div class="item" style="width:350px; height: 350px">
+                            <img src="images/1-Torre-Cruz-del-Sur.png" class="materialboxed" alt="">
+                        </div>
+                        <div class="item" style="width:350px; height: 350px">
+                            <img src="images/1-Torre-Cruz-del-Sur.png" class="materialboxed" alt="">
+                        </div>
+                        <div class="item" style="width:350px; height: 350px">
+                            <img src="images/1-Torre-Cruz-del-Sur.png" class="materialboxed" alt="">
+                        </div>
+                        <div class="item" style="width:350px; height: 350px">
+                            <img src="images/1-Torre-Cruz-del-Sur.png" class="materialboxed" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                autoWidth:true,
+                autoHeight:true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
 </body>
 </html>
