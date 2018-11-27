@@ -34,5 +34,183 @@ div#vacio{
 }
 .materialboxed{
     z-index: 10;
+}
+.row .col.m25{
+    width:20%;
+    margin-left:auto;
+    left:auto;
+    right:auto
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Store*/
+.cont-store {padding: 30px 0 42px 0;}
+
+.cont-store .cont-title{
+    line-height: 120%;
+    margin-bottom: 42px;
+    font-family: 'brandon_grotesquemedium';
+}
+
+.cont-store .util-carrousel {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.cont-store .util-carrousel .carrousel-wrapper{
+    overflow: hidden;
+    max-width: 89%;
+    margin: 0 auto;
+    height: 252px;
+}
+
+.cont-store .util-carrousel .thumbs-container {height: inherit;}
+
+.cont-store .util-carrousel .thumb {
+    float: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    margin: 0 16px;
+    height: inherit;
+}
+
+.cont-store .util-carrousel .thumb .image {
+    height: inherit;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cont-store .util-carrousel .thumb .image .inner-image {
+    padding-bottom: 100%;
+    position: relative;
+    height: inherit;
+}
+
+.cont-store .util-carrousel .thumb .image img {
+    display: none;
+    height: auto;
+    left: 0;
     position: absolute;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cont-store .carrousel .prev-button,
+.cont-store .carrousel .next-button {
+    background: url("../images/icon-sprite.png") no-repeat;
+    width: 24px;
+    height: 41px;
+    margin: -14px 0 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.cont-store .carrousel .prev-button {background-position: -3px -3px; left: 0;}
+.cont-store .carrousel .next-button {background-position: -34px -3px; right: 0;}
+
+
+
+/**Pop-up*/
+.popup.background {
+    background: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    opacity: .87 !important;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.cont-image-popup {
+    position: fixed;
+    /* overflow: hidden; */
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    max-width: 882px;
+    height: 556px;
+}
+
+.gallery.left-button,
+.gallery.right-button{
+    background: url("../images/icon-sprite.png") no-repeat;
+}
+
+.gallery.left-button, .gallery.right-button {
+    cursor: pointer;
+    display: none;
+    height: 41px;
+    position: absolute;
+    top: 0;
+    width: 24px;
+    z-index: 999;
+}
+
+.gallery.left-button {
+    left: -65px !important;
+    background-position: -3px -3px;
+}
+
+.gallery.right-button {
+    right: -65px;
+    left: auto !important;
+    background-position: -34px -3px;
+}
+
+.popup.close-button {
+    cursor: pointer;
+    position: fixed;
+    right: 38px;
+    top: 35px;
+    z-index: 9999;
+    color: #000000;
+    font-size: 29px;
+}
+
+.row{margin: 0;}
+
+
+@media(max-width: 992px){
+    /*Store*/
+    .cont-store {padding: 20px 0 30px 0;}
+
+    /*Store*/
+    .cont-store .util-carrousel .carrousel-wrapper {height: 150px;}
+}
+
+@media(max-width: 767px){
+    
+    /*Store*/
+    .cont-store{padding-bottom: 32px;}
+
+    .cont-store .cont-title{margin-bottom: 17px;}
+    .cont-store .cont-title .title{font-size: 22px;}
+
+    .cont-store .util-carrousel{max-width: 290px;}
+
+    .cont-store .carrousel .prev-button, .cont-store .carrousel .next-button {
+        width: 20px;
+        height: 35px;
+        background-size: 320px;
+    }
+
+    .cont-store .carrousel .next-button {background-position: -27px -1px;}
+    .cont-store .carrousel .left-button {background-position: -2px -1px;}
+
+    .cont-store .util-carrousel .carrousel-wrapper {
+        height: 120px;
+        max-width: 224px;
+    }
+
+    .cont-store .util-carrousel .thumb{margin: 0 7px;}
 }
