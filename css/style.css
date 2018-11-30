@@ -65,9 +65,9 @@ div#vacio{
 
 .cont-store .util-carrousel .carrousel-wrapper{
     overflow: hidden;
-    max-width: 89%;
+    max-width: 98%;
     margin: 0 auto;
-    height: 252px;
+    height: 190px;
 }
 
 .cont-store .util-carrousel .thumbs-container {height: inherit;}
