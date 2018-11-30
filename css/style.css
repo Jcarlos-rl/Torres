@@ -6,13 +6,13 @@ body{
     text-align: justify;
 }
 .torres-color-texto{
-    color: #04537b;
+    color: #03537c;
 }
 .torres-color-background{
-    background-color: #04537b;
+    background-color: #03537c;
 }
 .torres-color-background-opacity{
-    background-color: rgba(4, 83, 123, 0.7);
+    background-color: rgba(3, 83, 124, 0.7);
 }
 .spacing50{
     height: 50px;
@@ -67,7 +67,7 @@ div#vacio{
     overflow: hidden;
     max-width: 98%;
     margin: 0 auto;
-    height: 190px;
+    height: 182.9px;
 }
 
 .cont-store .util-carrousel .thumbs-container {height: inherit;}
