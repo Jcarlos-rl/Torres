@@ -9,6 +9,16 @@ $(document).ready(function(){
         height: 369,
         interval: 4500
     });
+    $('#slider3').slider({
+        indicators: false,
+        height: 250,
+        interval: 4500
+    });
+    $('#slider4').slider({
+        indicators: false,
+        height: 130,
+        interval: 4500
+    });
 });
 $(document).ready(function(){
     $('.parallax').parallax();
