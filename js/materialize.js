@@ -16,7 +16,7 @@ $(document).ready(function(){
     });
     $('#slider4').slider({
         indicators: false,
-        height: 130,
+        height: 120,
         interval: 4500
     });
 });
