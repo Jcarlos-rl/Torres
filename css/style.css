@@ -77,19 +77,6 @@ div#vacio{
 .btn:hover{
     background-color: #03537c;
 }
-.slider-home{
-    background-color: #000515; 
-    opacity: 0.7; 
-    height:280px;
-    margin: 8px  auto;
-    max-width:1280px;
-    width:98%;
-}
-.slider-home1{
-    height: 300px; 
-    border-style: solid; 
-    border-width: 2px;
-}
 /*Store*/
 .cont-store {padding: 30px 0 42px 0;}
 
@@ -110,7 +97,7 @@ div#vacio{
     overflow: hidden;
     max-width: 98%;
     margin: 0 auto;
-    height: 182.9px;
+    height: 190px;
 }
 
 .cont-store .util-carrousel .thumbs-container {height: inherit;}
@@ -221,14 +208,27 @@ div#vacio{
 }
 
 .row{margin: 0;}
+@media(min-width:992px){
+    .cont-image-popup {
+        max-width: 80%;
+        height: 70%;
+    }
+    .cont-store .util-carrousel .carrousel-wrapper {height: 190px;}  
+}
 
-
+@media(min-width:1200px){
+    .cont-store .util-carrousel .carrousel-wrapper {height: 225px;}  
+}
 @media(max-width: 992px){
+    .cont-image-popup {
+        max-width: 80%;
+        height: 70%;
+    }
     /*Store*/
     .cont-store {padding: 20px 0 30px 0;}
 
     /*Store*/
-    .cont-store .util-carrousel .carrousel-wrapper {height: 200px;}
+    .cont-store .util-carrousel .carrousel-wrapper {height: 160px;}
     
     .gallery.left-button {
         left: 15px !important;
