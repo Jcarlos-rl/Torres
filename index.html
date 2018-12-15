@@ -31,8 +31,8 @@
                     <img class="hide-on-med-and-up" style="height:55px" src="images/Torre-Cruz-Del-Sur-Logo1.png" alt="">
                 </a>
                 <a href="https://wa.me/5212227094593" class="right" target="_blank">
-                    <img class="hide-on-small-only" style="height:36px; margin-top: 30px; padding-left: 10px;" src="images/whats-icon.png" alt="">
-                    <img class="hide-on-med-and-up" style="height:26px; margin-top: 17px; padding-left: 10px;" src="images/whats-icon.png" alt="">
+                    <img class="hide-on-small-only" style="height:36px; margin-top: 30px; padding-left: 10px;" src="images/whats.png" alt="">
+                    <img class="hide-on-med-and-up" style="height:26px; margin-top: 17px; padding-left: 10px;" src="images/whats.png" alt="">
                 </a>
                 <a href="https://www.instagram.com/torrecruzdelsur/" class="right" target="_blank">
                     <img class="hide-on-small-only" style="height:36px; margin-top: 30px; padding-left: 10px;" src="images/insta.png" alt="">
@@ -433,7 +433,7 @@
                 <div class="spacing50 hide-on-xl-and-up"></div>
                 <div class="col s12 m12 xl6">
                     <br class="hide-on-xl-and-up">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.814041804331!2d-98.25956412625202!3d19.071911956310615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6f305767ead%3A0x560c2028e3ad05fc!2sTorre+Cruz+del+Sur!5e0!3m2!1ses!2smx!4v1543203486090" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1csO4_Ob_GEJvJGhlnJT1jXAsJIEsX7hX" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -604,5 +604,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/carousel.js"></script>
+    <div id="map"></div>
+    <script>
+    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+    // Australia.
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: {lat: 19.071806, lng: -98.257472}
+        });
+
+        var image = 'css/icon.svg';
+        var beachMarker = new google.maps.Marker({
+            position: {lat: 19.071806, lng: -98.257472},
+            map: map,
+            icon: image
+        });
+    }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD2ZU9jtOqNxNNK0vTjQBuTb_ihopoiek&callback=initMap">
+    </script>
 </body>
 </html>
