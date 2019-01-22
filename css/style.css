@@ -38,6 +38,11 @@ div#vacio{
 .materialboxed{
     z-index: 10;
 }
+.banner{
+    background-image: url(../images/Promos/1600-Torre-Cruz-del-Sur.png);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
 .row .col.m25{
     width:20%;
     margin-left:auto;
@@ -217,7 +222,10 @@ div#vacio{
 }
 
 @media(min-width:1200px){
-    .cont-store .util-carrousel .carrousel-wrapper {height: 225px;}  
+    .cont-store .util-carrousel .carrousel-wrapper {height: 225px;}
+    .imgres{
+        height: 225;
+    }  
 }
 @media(max-width: 992px){
     .cont-image-popup {
