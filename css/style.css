@@ -95,8 +95,10 @@ div#vacio{
     background-size:cover; 
     height:369px;
 }
-
-.text-depto .text-depto-2 .text-depto-3{
+.text-depto-2 {
+    margin-top: 20px;
+}
+.text-depto .text-depto-3{
     margin-top: 35px;
 }
 .btn-floating:hover{
@@ -360,7 +362,8 @@ div#vacio{
         margin-top: 3px;
     }
     .text-depto-2 {
-        margin-top: 8px;
+        margin-top: 3px;
+        font-size: .5em !important;
     }
     .text-depto-3{
         margin-top: 10px;
